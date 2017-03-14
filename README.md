@@ -21,7 +21,8 @@ We finally need semantics in web applications. Millions of content management sy
   * stores the graph model
 * Spring Security
   * Google and Github authentication for now
-
+* Alfresco
+* Activiti
 
 ## Runtime Environment
 
