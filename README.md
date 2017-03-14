@@ -17,12 +17,14 @@ We finally need semantics in web applications. Millions of content management sy
 
 * Spring Boot
 * Neo4j
-  * stores nodes and relationships
-  * stores the graph model
+  * Stores the graph model
+  * Stores nodes and relationships
 * Spring Security
   * Google and Github authentication for now
-* Alfresco
-* Activiti
+* Camunda
+  * BPMN 2.0 workflow engine
+* ModeShape
+  * DMS storage (JCR 2.0)
 
 ## Runtime Environment
 
