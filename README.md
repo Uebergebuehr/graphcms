@@ -2,6 +2,10 @@
 
 Java based content management system based on graph technologies
 
+## Philosophy
+
+We finally need semantics in web applications. Millions of content management systems are doing the same thing: provide pre defined list and single views in a more or less hierarchical way. GraphCMS just connects nodes with relationships. Simple. Better.
+
 ## Goals
 
 * Graphify the content
