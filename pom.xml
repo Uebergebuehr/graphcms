@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-bom</artifactId>
-		<version>Brussels-RELEASE</version>
+		<version>Brussels-SR4</version>
 	</parent>
 	<groupId>org.uebergebuehr</groupId>
 	<artifactId>graphcms</artifactId>
