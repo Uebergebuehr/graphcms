@@ -12,10 +12,12 @@
 	<name>Graph CMS</name>
 	<description>Java based content management system based on graph technologies</description>
 	<url>https://www.uebergebuehr.de/</url>
-	<scm>
-		https://github.com/Uebergebuehr/graphcms
-	</scm>
+	<scm>https://github.com/Uebergebuehr/graphcms</scm>
 	<properties>
+		<!-- Version of dependencies -->
+		<version.apache.commons.lang3>3.6</version.apache.commons.lang3>
+		<version.javatuples>1.2</version.javatuples>
+
 		<!-- Version of maven plugins -->
 		<version.plugin.maven-release-plugin>2.5.2</version.plugin.maven-release-plugin>
 		<version.plugin.nexus-staging-maven-plugin>1.6.5</version.plugin.nexus-staging-maven-plugin>
@@ -86,6 +88,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
+			<version>${version.apache.commons.lang3}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.javatuples</groupId>
