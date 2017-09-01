@@ -1,5 +1,12 @@
 # Graph CMS
 
+  ____                 _      ____ __  __ ____  
+ / ___|_ __ __ _ _ __ | |__  / ___|  \/  / ___| 
+| |  _| '__/ _` | '_ \| '_ \| |   | |\/| \___ \ 
+| |_| | | | (_| | |_) | | | | |___| |  | |___) |
+ \____|_|  \__,_| .__/|_| |_|\____|_|  |_|____/ 
+                |_|                             
+
 Java based content management system based on graph technologies
 
 ## Philosophy
@@ -12,6 +19,7 @@ We finally need semantics in web applications. Millions of content management sy
 * Graph model (node and relationship types) freely editable
 * Lightweight
 * Works out of the box
+* Use proper standards if possible (JCR 2.0, BPMN 2.0, OAuth 2.0)
 
 ## Technology Stack
 
