@@ -9,7 +9,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
+import org.uebergebuehr.graphcms.dms.config.ModeShapeConfig;
 import org.uebergebuehr.graphcms.util.ColumnLogger;
 
 /**
@@ -18,6 +20,7 @@ import org.uebergebuehr.graphcms.util.ColumnLogger;
  */
 @SpringBootApplication
 @EnableNeo4jRepositories(basePackages = { "org.uebergebuehr.graphcms.repository" })
+@Import(ModeShapeConfig.class)
 public class GraphCmsApplication {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(GraphCmsApplication.class);

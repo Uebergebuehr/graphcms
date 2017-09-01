@@ -1,0 +1,24 @@
+{
+    "name" : "sample",
+    "jndiName" : "",
+    "monitoring" : {
+        "enabled" : true
+    },
+    "storage" : {
+        "binaryStorage" : {
+            "type" : "file",
+            "directory": "${java.io.tmpdir}/graphcms/binaries",
+            "minimumBinarySizeInBytes" : 40
+        }
+    },
+    "workspaces" : {
+        "default" : "default",
+        "allowCreation" : true
+    },
+    "security" : {
+        "anonymous" : {
+            "roles" : ["readonly", "readwrite", "admin"],
+            "useOnFailedLogin" : false
+        }
+    }
+}

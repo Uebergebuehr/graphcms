@@ -19,6 +19,7 @@
 		<!-- Version of dependencies -->
 		<version.apache.commons.lang3>3.6</version.apache.commons.lang3>
 		<version.javatuples>1.2</version.javatuples>
+		<version.modeshape>5.4.1.Final</version.modeshape>
 
 		<!-- Version of maven plugins -->
 		<version.plugin.maven-release-plugin>2.5.2</version.plugin.maven-release-plugin>
@@ -60,12 +61,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+		<dependency>
+			<groupId>org.modeshape</groupId>
+			<artifactId>modeshape-jcr-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.modeshape</groupId>
+			<artifactId>modeshape-jcr</artifactId>
+		</dependency>
         <dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -135,6 +143,17 @@
 			<artifactId>spring-boot-starter-data-ldap</artifactId>
 		</dependency>
 	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.modeshape.bom</groupId>
+				<artifactId>modeshape-bom-embedded</artifactId>
+				<version>${version.modeshape}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>
